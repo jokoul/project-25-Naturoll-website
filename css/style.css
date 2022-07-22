@@ -1,0 +1,45 @@
+/*CSS VARIABLES*/
+:root {
+  --primary: #7ed56f;
+  --secondary: #55c57a;
+  --tertiary: #28b485;
+}
+
+/*DEFAULT CSS*/
+* {
+  /*reset css with universal selector*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px; /*create a white border around all page*/
+}
+
+.header {
+  height: 95vh; /*95% of viewport height*/
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.805),
+      rgba(40, 180, 133, 0.805)
+    ),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  ); /*create a wedge at the bottom of the header*/
+}
